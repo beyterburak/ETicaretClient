@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
 import { RouterModule } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { CreateComponent } from './create/create.component';
 import { ListComponent } from './list/list.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -21,8 +23,9 @@ import {MatButtonModule} from '@angular/material/button';
     RouterModule.forChild([
       { path: "", component: ProductsComponent }
     ]),
-    MatSidenavModule, MatInputModule, MatFormFieldModule, MatButtonModule
-    
+    MatSidenavModule, MatInputModule, MatFormFieldModule, MatButtonModule,
+    MatTableModule, MatPaginatorModule
+
   ]
 })
 export class ProductsModule { }
