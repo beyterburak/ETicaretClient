@@ -12,7 +12,7 @@ import { FileUploadModule } from '../services/common/file-upload/file-upload.mod
     CommonModule,
     LayoutModule,
     ComponentsModule,
-    FileUploadModule
+    FileUploadModule,
   ],
   exports:[
     LayoutModule
